@@ -350,6 +350,8 @@ th, td {
     color: #ffffff;
     border-radius: 5px;
     font-size: 15px;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .product:hover{
     transform: translateY(-10px);
@@ -359,9 +361,11 @@ th, td {
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+   
 .products {
     padding: 50px 0;
     text-align: center;
+    cursor: pointer;
 }
 .products h2 {
     color: #111111;
