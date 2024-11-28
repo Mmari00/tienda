@@ -34,43 +34,49 @@
     </header>
     
    
-    
-   
-    <div class="container" style="width: 100vh; margin-top: 25px;">
-      <h1 id="h1"></h1>
-      <form id="form">
-        <div class="form-group">
-          <label for="name">Nombre completo</label>
-          <input type="text" id="name" placeholder="Tu nombre" required minlength="3" maxlength="100" name="name" />
+    <div class="container">
+      <form action="" class="form" id="form" autocomplete="off">
+        <p class="form-titulo"></p>
+        <div class="form-input name">
+          <input type="text" id="name">
+          <label for="name">Nombre Completo</label>
+          <p class="mensajeError"></p>
         </div>
-        <div class="form-group">
+        <div class="form-input company">
+          <input type="text" id="company">
           <label for="company">Empresa (opcional)</label>
-          <input type="text" id="company" placeholder="..." required minlength="3" maxlength="100" name="company" />
+          <p class="mensajeError"></p>
         </div>
-        <div class="form-group">
-          <label for="phone">Número de contacto</label>
-          <input type="text" id="phone" placeholder="310 789 1546" required minlength="3" maxlength="100" name="phone" />
-        </div>
-        <div class="form-group">
+        <div class="form-input email">
+          <input type="email" id="email">
           <label for="email">Correo electrónico</label>
-          <input type="email" id="email" placeholder="yo@gmail.com" required name="email" />
+          <p class="mensajeError"></p>
         </div>
-        <div class="form-group">
+        <div class="form-input mobile">
+          <input type="text" id="mobile">
+          <label for="mobile">Número de contacto</label>
+          <p class="mensajeError"></p>
+        </div>
+        <div class="form-input city">
+          <input type="text" id="city">
           <label for="city">Ciudad</label>
-          <input type="text" id="city" placeholder="Medellín" required minlength="3" maxlength="100" name="city" />
+          <p class="mensajeError"></p>
         </div>
-        <div class="form-group">
-          <label for="first">Es tu primera vez comprando en Reishel?</label>
-          <input type="text" id="first" placeholder="Sí/No" required minlength="3" maxlength="100" name="first" />
+        <div class="form-input firstTime">
+          <input type="text" id="firstTime">
+          <label for="firstTime">Es tu primera vez comprando en Reishel? (Sí/No)</label>
+          <p class="mensajeError"></p>
         </div>
-        <div class="form-group">
-          <label for="message1">Déjanos un breve mensajito describiendo tu solicitud.</label>
-          <input type="text" id="message1" placeholder="..." required minlength="3" maxlength="100" name="message1" />
+        <div class="form-input message">
+          <input type="text" id="message">
+          <label for="message">Déjanos un breve mensajito describiendo tu solicitud.</label>
+          <p class="mensajeError"></p>
         </div>
-        <button type="submit" style="margin-top: 5vh; margin-left: 10vh; border-radius: 10px;" id="boton"><a href="prueba.html" style="text-decoration: none; color: #ffffff;">Enviar formulario</a></button>
-
+        <div class="final" >
+          <button class="form-boton" id="boton"><a href="prueba.html" style="color: #ffffff; transition: all 0.2s ease-in-out;; cursor: pointer;">Envíanos tu formulario.</a></button>
+        </div
+        <p class="mensajeCorrecto"></p>
       </form>
-      
     </div> 
     
 
@@ -90,6 +96,6 @@
    
    
 
-
+    <script src="/tienda/public/js/contactanos.js"></script>
   </body>
 </html>
