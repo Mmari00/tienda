@@ -113,7 +113,6 @@ img {
 .navbar ul li {
     display: inline-block;
     position: relative;
-    /* Necesario para que el menú desplegable funcione */
     margin: 0 20px;
 }
 
@@ -126,7 +125,7 @@ img {
     transition: color 0.3s ease;
 }
 
-/* Subrayado en el link al hacer hover o al estar activo */
+
 .navbar ul li a::after {
     content: '';
     position: absolute;
@@ -135,31 +134,26 @@ img {
     width: 0;
     height: 2px;
     background-color: #000000;
-    /* Color de la línea */
     transition: width 0.3s ease;
 }
 
-/* Mostrar la línea debajo del enlace */
+
 .navbar ul li a:hover::after,
 .navbar ul li a:focus::after {
     width: 100%;
-    /* La línea se expande a todo el ancho del link */
+    
 }
 
-/* Estilo de los enlaces cuando se pasa el mouse sobre ellos */
 .navbar ul li a:hover,
 .navbar ul li a:focus {
     color: #020202;
-    /* Color del texto cuando se hace hover */
+   
 }
 
-/* Menú desplegable */
 .submenu .submenu-items {
     display: none;
-    /* Oculta el submenú por defecto */
     position: absolute;
     top: 100%;
-    /* Lo posiciona justo debajo del enlace */
     left: 0;
     background-color: #444;
     width: 180px;
@@ -181,7 +175,7 @@ img {
     background-color: #555;
 }
 
-/* Mostrar el submenú cuando se pasa el mouse sobre el titular */
+
 .submenu:hover .submenu-items {
     display: block;
 }
@@ -353,6 +347,9 @@ th, td {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
+
+
 .product:hover{
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -449,15 +446,19 @@ th, td {
     font-size: 16px;
     color: #111111;
 }
+
+
 .footer {
     margin-bottom: 40px;
     padding: 50px 0;
     background-color: #111111;
+    
+    
 }
 .footer-content {
-    
     display: flex;
     justify-content: space-between;
+
 }
 .link  h3 {
     font-size: 18px;
