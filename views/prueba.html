@@ -106,117 +106,403 @@
 
     <main class="products container" id="lista-1">
         <h2>¡Todos nuestros bolsos!</h2>
-       <div class="product-content">
-        <div class="product" style="background: linear-gradient(to bottom, #000000, #ffffff);">
-            <img src="/tienda/img/bolso_corazon.jpeg" alt="" class="img">
-            <div class="product-txt">
-                <h3>Bolso Corazón</h3>
-                <p>Crochet</p>
-                <p class="precio">$70.000</p>
-                <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+        <!-- Tarjeta 1 -->
+    <div class="producto-card" style="margin-left: -30px;">
+        <div class="producto-img-container">
+            <img src="/tienda/img/bolso_corazon.jpeg" alt="Cartera Corazón" class="producto-img principal">
+            <img src="/tienda/img/bolso_corazon2.jpeg" alt="Cartera Corazón Hover" class="producto-img hover">
+            <label for="modal-1" class="btn-vista-rapida" style="background-color: #000;">Ver Más</label>
+        </div>
+        <div class="producto-detalles">
+            <h3 style="margin-left: -10px;">CORAZÓN</h3>
+                <div class="rating">
+                    <span class="estrella" data-value="5">&#9733;</span>
+                    <span class="estrella" data-value="4">&#9733;</span>
+                    <span class="estrella" data-value="3">&#9733;</span>
+                    <span class="estrella" data-value="2">&#9733;</span>
+                    <span class="estrella" data-value="1">&#9733;</span>
+                </div>
+            <p class="precio" style="text-align: center;">$60,000</p>
+            <div class="color-circle" style="background-color: rgb(181, 51, 51);"></div>
+            <button class="btn-añadir" data-id="1" style="margin-left: 10px; background-color: #000; color: #ffffff;">Añadir al carrito</button>
+        </div>
+    </div>
+    <!-- Modal 1 -->
+    <input type="checkbox" id="modal-1" class="modal-checkbox">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-1" class="close-btn">&times;</label>
+            <div class="modal-img-container">
+                <img style="width: 290px; height: 300px;" src="/tienda/img/bolso_corazon.jpeg" alt="Cartera Corazón">
+            </div>
+            <div class="modal-details">
+                <h3 style="margin-bottom: 15px;">CARTERA CORAZÓN</h3>
+                <p>Este exclusivo bolso de crochet está hecho a mano con amor y atención al detalle. <br> <br> ¡Lleva contigo un
+                    pedacito de arte en cada paso!</p>
+                <p class="precio" style="margin-top: 20px;">$60,000</p>
+                <div class="color-circle" style="background-color: rgb(181, 51, 51); margin-left: 85px;"></div>
+                <button class="btn-añadir" data-id="1" style="background-color: #000; margin-left: 200px;">Añadir al carrito</button>
             </div>
         </div>
-        <div class="product">
-            <img src="/tienda/img/cartera_mini.jpeg" alt="">
-            <div class="product-txt">
-                <h3>Cartera Mini</h3>
-                <p>Crochet</p>
-                <p class="precio">$50.000</p>
-                <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="producto-card" style="margin-left: 290px; margin-top: -635px;">
+        <div class="producto-img-container">
+            <img src="/tienda/img/cartera_oreo.jpeg" alt="Cartera Luna" class="producto-img principal">
+            <img src="/tienda/img/cartera_oreo2.jpeg" alt="Cartera Luna Hover" class="producto-img hover">
+            <label for="modal-2" class="btn-vista-rapida" style="background-color: #000;">Ver Más</label>
+        </div>
+        <div class="producto-detalles">
+            <h3 style="margin-left: -10px;">BOLSO OREO</h3>
+                <div class="rating">
+                    <span class="estrella" data-value="5">&#9733;</span>
+                    <span class="estrella" data-value="4">&#9733;</span>
+                    <span class="estrella" data-value="3">&#9733;</span>
+                    <span class="estrella" data-value="2">&#9733;</span>
+                    <span class="estrella" data-value="1">&#9733;</span>
+                </div>
+            <p class="precio"style="text-align: center;">$70,000</p>
+            <div class="color-circle" style="background-color: rgb(51, 102, 153);"></div>
+            <button class="btn-añadir" data-id="2" style="background-color: #000; margin-left: 10px;">Añadir al carrito</button>
+        </div>
+    </div>
+    <!-- Modal 2 -->
+    <input type="checkbox" id="modal-2" class="modal-checkbox">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-2" class="close-btn">&times;</label>
+            <div class="modal-img-container">
+                <img style="width: 290px; height: 300px;" src="/tienda/img/cartera_oreo.jpeg" alt="Cartera Luna">
+            </div>
+            <div class="modal-details">
+                <h3 style="margin-bottom: 15px;">BOLSO OREO</h3>
+                <p style="margin-bottom: 20px;">Bolso tejido a mano, ideal para cualquier ocasión.</p>
+                <p class="precio">$70,000</p>
+                <div class="color-circle" style="background-color: rgb(51, 102, 153); margin-left: 85px;"></div>
+                <button class="btn-añadir" data-id="2" style="background-color: #000; margin-left: 200px;">Añadir al carrito</button>
             </div>
         </div>
-        <div class="product" style="background: linear-gradient(to bottom, #000000, #ffffff);">
-            <img src="/tienda/img/cartera_copitos.jpeg" alt="">
-            <div class="product-txt">
-                <h3>Cartera Copitos</h3>
-                <p>Crochet</p>
-                <p class="precio">$80.000</p>
-                <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="producto-card" style="margin-left: 610px; margin-top: -635px;">
+        <div class="producto-img-container">
+            <img src="/tienda/img/cartera_rosa.jpeg" alt="Cartera Flor" class="producto-img principal">
+            <img src="/tienda/img/cartera_rosa2.jpeg" alt="Cartera Flor Hover" class="producto-img hover">
+            <label for="modal-3" class="btn-vista-rapida" style="background-color: #000;">Ver Más</label>
+        </div>
+        <div class="producto-detalles">
+            <h3 style="margin-left: -10px;">CARTERA ROSA</h3>
+                <div class="rating">
+                    <span class="estrella" data-value="5">&#9733;</span>
+                    <span class="estrella" data-value="4">&#9733;</span>
+                    <span class="estrella" data-value="3">&#9733;</span>
+                    <span class="estrella" data-value="2">&#9733;</span>
+                    <span class="estrella" data-value="1">&#9733;</span>
+                </div>
+            <p class="precio" style="text-align: center;">$70,000</p>
+            <div class="color-circle" style="background-color: rgb(248, 197, 222); "></div>
+            <button class="btn-añadir" data-id="3" style="background-color: #000; margin-left: 10px">Añadir al carrito</button>
+        </div>
+    </div>
+    <!-- Modal 3 -->
+    <input type="checkbox" id="modal-3" class="modal-checkbox">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-3" class="close-btn">&times;</label>
+            <div class="modal-img-container">
+                <img style="width: 300px; height: 340px;" src="/tienda/img/cartera_rosa.jpeg" alt="Cartera Flor">
+            </div>
+            <div class="modal-details">
+                <h3 style="margin-bottom: 15px;">CARTERA ROSA</h3>
+                <p style="margin-bottom: 20px;">Un diseño elegante. Perfecto para un momento especial.</p>
+                <p class="precio">$70,000</p>
+                <div class="color-circle" style="background-color: rgb(248, 197, 222); margin-left: 95px;"></div>
+                <button class="btn-añadir" data-id="3" style="background-color: #000; margin-left: 200px;">Añadir al carrito</button>
             </div>
         </div>
-        <div class="product">
-            <img src="/tienda/img/mochila_grande.jpeg" alt="">
-            <div class="product-txt">
-                <h3>Mochila Grande</h3>
-                <p>Crochet</p>
-                <p class="precio">$80.000</p>
-                <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="producto-card" style="margin-left: 930px; margin-top: -635px;">
+        <div class="producto-img-container">
+            <img src="/tienda/img/cartera_lila.jpeg" alt="Cartera Luna" class="producto-img principal">
+            <img src="/tienda/img/cartera_lila2.jpeg" alt="Cartera Luna Hover" class="producto-img hover">
+            <label for="modal-3" class="btn-vista-rapida" style="background-color: #000;">Ver Más</label>
+        </div>
+        <div class="producto-detalles">
+            <h3 style="margin-left: -10px;">CARTERA LUJO</h3>
+                <div class="rating">
+                    <span class="estrella" data-value="5">&#9733;</span>
+                    <span class="estrella" data-value="4">&#9733;</span>
+                    <span class="estrella" data-value="3">&#9733;</span>
+                    <span class="estrella" data-value="2">&#9733;</span>
+                    <span class="estrella" data-value="1">&#9733;</span>
+                </div>
+            <p class="precio" style="text-align: center;">$60,000</p>
+            <div class="color-circle" style="background-color: rgb(202, 176, 218);"></div>
+            <button class="btn-añadir" data-id="4" style="background-color: #000; margin-left: 10px;">Añadir al carrito</button>
+        </div>
+    </div>
+    <!-- Modal 3 -->
+    <input type="checkbox" id="modal-3" class="modal-checkbox">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-3" class="close-btn">&times;</label>
+            <div class="modal-img-container">
+                <img style="width: 300px; height: 340px;" src="/tienda/img/cartera_lila.jpeg" alt="Cartera Luna">
+            </div>
+            <div class="modal-details">
+                <h3 style="margin-bottom: 15px;">CARTERA LUJO</h3>
+                <p style="margin-bottom: 20px;">Bolso tejido a mano, ideal para cualquier ocasión.</p>
+                <p class="precio">$60,000</p>
+                <div class="color-circle" style="background-color: rgb(202, 176, 218); margin-left: 95px;"></div>
+                <button class="btn-añadir" data-id="4" style="background-color: #000; margin-left: 200px;">Añadir al carrito</button>
             </div>
         </div>
-        <div class="product" style="background: linear-gradient(to bottom, #000000, #ffffff);">
-            <img src="/tienda/img/cartera_oreo.jpeg" alt="">
-            <div class="product-txt">
-                <h3>Cartera Oreo</h3>
-                <p>Crochet</p>
-                <p class="precio">$70.000</p>
-                <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
+    </div>
+    
+    <!-- Tarjeta 4 -->
+    <div class="producto-card" style="margin-left: -30px; margin-top: 20px;">
+        <div class="producto-img-container">
+            <img src="/tienda/img/mochila_grande.jpeg" alt="Cartera Flor" class="producto-img principal">
+            <img src="/tienda/img/mochila_grande2.jpeg" alt="Cartera Flor Hover" class="producto-img hover">
+            <label for="modal-4" class="btn-vista-rapida" style="background-color: #000;">Ver Más</label>
+        </div>
+        <div class="producto-detalles">
+            <h3 style="margin-left: -10px;">MOCHILA GRANDE</h3>
+                <div class="rating">
+                    <span class="estrella" data-value="5">&#9733;</span>
+                    <span class="estrella" data-value="4">&#9733;</span>
+                    <span class="estrella" data-value="3">&#9733;</span>
+                    <span class="estrella" data-value="2">&#9733;</span>
+                    <span class="estrella" data-value="1">&#9733;</span>
+                </div>
+            <p class="precio" style="text-align: center;">$70,000</p>
+            <div class="color-circle" style="background-color: #a1a1a1;" title="Azul oscuro"></div>
+            
+            <button class="btn-añadir" data-id="5" style="background-color: #000; margin-left: 10px;">Añadir al carrito</button>
+        </div>
+    </div>
+    <!-- Modal 4 -->
+    <input type="checkbox" id="modal-4" class="modal-checkbox">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-4" class="close-btn">&times;</label>
+            <div class="modal-img-container">
+                <img style="width: 300px; height: 340px;" src="/tienda/img/mochila_grande.jpeg" alt="Cartera Flor">
+            </div>
+            <div class="modal-details">
+                <h3 style="margin-bottom: 15px;">MOCHILA GRANDE</h3>
+                <p style="margin-bottom: 20px;">Un diseño elegante. Perfecto para un momento especial.</p>
+                <p class="precio">$70,000</p>
+                <div class="color-circle" style="background-color: rgb(172, 172, 172); margin-left: 95px;"></div>
+                <button class="btn-añadir" data-id="5" style="background-color: #000; margin-left: 200px;">Añadir al carrito</button>
             </div>
         </div>
-        <div class="product">
-            <img src="/tienda/img/morral_mediano.jpeg" alt="">
-            <div class="product-txt">
-                <h3>Morral Mediano</h3>
-                <p>Crochet</p>
-                <p class="precio">$60.000</p>
-                <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
+    </div>
+    
+    <!-- Tarjeta 5 -->
+    <div class="producto-card" style="margin-left: 930px; margin-top: -635px;">
+        <div class="producto-img-container">
+            <img src="/tienda/img/mochila_mediana.jpeg" alt="Cartera Urbana" class="producto-img principal">
+            <img src="/tienda/img/mochila_mediana2.jpeg" alt="Cartera Urbana Hover" class="producto-img hover">
+            <label for="modal-5" class="btn-vista-rapida" style="background-color: #000;">Ver Más</label>
+        </div>
+        <div class="producto-detalles">
+            <h3 style="margin-left: -10px;">MOCHILA MEDIANA</h3>
+                <div class="rating">
+                    <span class="estrella" data-value="5">&#9733;</span>
+                    <span class="estrella" data-value="4">&#9733;</span>
+                    <span class="estrella" data-value="3">&#9733;</span>
+                    <span class="estrella" data-value="2">&#9733;</span>
+                    <span class="estrella" data-value="1">&#9733;</span>
+                </div>
+            <p class="precio" style="text-align: center;">$60,000</p>
+                        
+                    <div class="color-circle" style="background-color: #092b69;" title="Azul oscuro"></div>
+                    
+                        
+            <button class="btn-añadir" data-id="5" style="background-color: #000; margin-left: 10px;">Añadir al carrito</button>
+        </div>
+    </div>
+    <!-- Modal 5 -->
+    <input type="checkbox" id="modal-5" class="modal-checkbox">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-5" class="close-btn">&times;</label>
+            <div class="modal-img-container">
+                <img style="width: 300px; height: 340px;" src="/tienda/img/mochila_mediana.jpeg" alt="Cartera Urbana">
+            </div>
+            <div class="modal-details">
+                <h3 style="margin-bottom: 15px;">MOCHILA MEDIANA</h3>
+                <p style="margin-bottom: 20px;">Bolso práctico y moderno para un estilo de vida dinámico.</p>
+                <p class="precio">$60,000</p>
+                <div class="color-circle" style="background-color: rgb(102, 102, 102); margin-left: 95px;"></div>
+                <button class="btn-añadir" data-id="5" style="background-color: #000; margin-left: 200px;">Añadir al carrito</button>
             </div>
         </div>
-        <div class="product" style="background: linear-gradient(to bottom, #000000, #ffffff);">
-            <img src="/tienda/img/cartera.jpeg" alt="">
-            <div class="product-txt">
-                <h3>Cartera</h3>
-                <p>Crochet</p>
-                <p class="precio">$60.000</p>
-                <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
+    </div>
+    
+   
+    <!-- Tarjeta 7 -->
+    <div class="producto-card" style="margin-left: 610px; margin-top: -635px;">
+        <div class="producto-img-container">
+            <img src="/tienda/img/bolso_medialuna.jpeg" alt="Cartera Tejida" class="producto-img principal">
+            <img src="/tienda/img/bolso_medialuna2.jpeg" alt="Cartera Tejida Hover" class="producto-img hover">
+            <label for="modal-7" class="btn-vista-rapida" style="background-color: #000;">Ver Más</label>
+        </div>
+        <div class="producto-detalles">
+            <h3 style="margin-left: -10px;">CARTERA MEDIA LUNA</h3>
+                <div class="rating">
+                    <span class="estrella" data-value="5">&#9733;</span>
+                    <span class="estrella" data-value="4">&#9733;</span>
+                    <span class="estrella" data-value="3">&#9733;</span>
+                    <span class="estrella" data-value="2">&#9733;</span>
+                    <span class="estrella" data-value="1">&#9733;</span>
+                </div>
+            <p class="precio" style="text-align: center;">$50,000</p>
+            <div class="color-circle" style="background-color: rgb(126, 29, 42);"></div>
+            <button class="btn-añadir" data-id="6" style="background-color: #000; margin-left: 10px;">Añadir al carrito</button>
+        </div>
+    </div>
+    <!-- Modal 7 -->
+    <input type="checkbox" id="modal-7" class="modal-checkbox">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-7" class="close-btn">&times;</label>
+            <div class="modal-img-container">
+                <img style="width: 300px; height: 340px;" src="/tienda/img/bolso_medialuna.jpeg" alt="Cartera Tejida">
+            </div>
+            <div class="modal-details">
+                <h3>CARTERA MEDIA LUNA</h3>
+                <p>Diseño artesanal en crochet para un estilo único y natural.</p>
+                <p class="precio">$50,000</p>
+                <div class="color-circle" style="background-color: rgb(126, 29, 42);margin-left: 95px;"></div>
+                <button class="btn-añadir" data-id="6" style="background-color: #000;margin-left: 200px;">Añadir al carrito</button>
             </div>
         </div>
-        <div class="product">
-            <img src="/tienda/img/bolso_medialuna.jpeg" alt="">
-            <div class="product-txt">
-                <h3>Bolso Media Luna</h3>
-                <p>Crochet</p>
-                <p class="precio">$50.000</p>
-                <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
+    </div>
+    
+    <!-- Tarjeta 8 -->
+    <div class="producto-card" style="margin-left: 290px; margin-top: -639px;">
+        <div class="producto-img-container">
+            <img src="/tienda/img/cartera.jpeg" alt="Cartera Casual" class="producto-img principal">
+            <img src="/tienda/img/cartera2.jpeg" alt="Cartera Casual Hover" class="producto-img hover">
+            <label for="modal-8" class="btn-vista-rapida" style="background-color: #000;">Ver Más</label>
+        </div>
+        <div class="producto-detalles">
+            <h3 style="margin-left: -10px;">CARTERA</h3>
+                <div class="rating">
+                    <span class="estrella" data-value="5">&#9733;</span>
+                    <span class="estrella" data-value="4">&#9733;</span>
+                    <span class="estrella" data-value="3">&#9733;</span>
+                    <span class="estrella" data-value="2">&#9733;</span>
+                    <span class="estrella" data-value="1">&#9733;</span>
+                </div>
+            <p class="precio" style="text-align: center;">$60,000</p>
+            <div class="color-circle" style="background-color: rgb(43, 43, 43);"></div>
+            <button class="btn-añadir" data-id="7" style="background-color: #000; margin-left: 10px;">Añadir al carrito</button>
+        </div>
+    </div>
+    <!-- Modal 8 -->
+    <input type="checkbox" id="modal-8" class="modal-checkbox">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-8" class="close-btn">&times;</label>
+            <div class="modal-img-container">
+                <img style="width: 300px; height: 340px;" src="/tienda/img/cartera.jpeg" alt="Cartera Casual">
+            </div>
+            <div class="modal-details">
+                <h3>CARTERA</h3>
+                <p>Un bolso versátil para complementar cualquier atuendo diario.</p>
+                <p class="precio">$60,000</p>
+                <div class="color-circle" style="background-color: rgb(43, 43, 43);margin-left: 95px;"></div>
+                <button class="btn-añadir" data-id="7" style="background-color: #000;margin-left: 200px;">Añadir al carrito</button>
             </div>
         </div>
-        <div class="product" style="background: linear-gradient(to bottom, #000000, #ffffff);">
-            <img src="/tienda/img/cartera_lila.jpeg" alt="">
-            <div class="product-txt">
-                <h3>Cartera Lila</h3>
-                <p>Crochet</p>
-                <p class="precio">$60.000</p>
-                <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
+    </div>
+    
+    <!-- Tarjeta 9 -->
+    <div class="producto-card" style="margin-top: 20px; margin-left: 290px;">
+        <div class="producto-img-container">
+            <img src="/tienda/img/cartera_copitos.jpeg" alt="Cartera Arcoiris" class="producto-img principal">
+            <img src="/tienda/img/cartera_copitos2.jpeg" alt="Cartera Arcoiris Hover" class="producto-img hover">
+            <label for="modal-9" class="btn-vista-rapida" style="background-color: #000;">Ver Más</label>
+        </div>
+        <div class="producto-detalles">
+            <h3 style="margin-left: -10px;">CARTERA COPITOS</h3>
+                <div class="rating">
+                    <span class="estrella" data-value="5">&#9733;</span>
+                    <span class="estrella" data-value="4">&#9733;</span>
+                    <span class="estrella" data-value="3">&#9733;</span>
+                    <span class="estrella" data-value="2">&#9733;</span>
+                    <span class="estrella" data-value="1">&#9733;</span>
+                </div>
+            <p class="precio" style="text-align: center;">$80,000</p>
+            <div class="color-circle" style="background-color: rgb(214, 214, 214);"></div>
+            <button class="btn-añadir" data-id="8" style="background-color: #000; margin-left: 10px;">Añadir al carrito</button>
+        </div>
+    </div>
+    <!-- Modal 9 -->
+    <input type="checkbox" id="modal-9" class="modal-checkbox">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-9" class="close-btn">&times;</label>
+            <div class="modal-img-container">
+                <img style="width: 300px; height: 340px;" src="/tienda/img/cartera_copitos.jpeg" alt="Cartera Arcoiris">
+            </div>
+            <div class="modal-details">
+                <h3 style="margin-bottom: 15px;">CARTERA COPITOS</h3>
+                <p style="margin-bottom: 20px;">Colores vibrantes y diseño alegre, ideal para destacar en cualquier lugar.</p>
+                <p class="precio">$80,000</p>
+                <div class="color-circle" style="background-color: rgb(214, 214, 214); margin-left: 95px;"></div>
+                <button class="btn-añadir" data-id="8" style="background-color: #000; margin-left: 200px;">Añadir al carrito</button>
             </div>
         </div>
-        <div class="product">
-            <img src="/tienda/img/mochila_mediana.jpeg" alt="">
-            <div class="product-txt">
-                <h3>Mochila Mediana</h3>
-                <p>Crochet</p>
-                <p class="precio">$50.000</p>
-                <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
+    </div>
+    
+    <!-- Tarjeta 10 -->
+    <div class="producto-card" style="margin-top: -635px; margin-left: 610px;">
+        <div class="producto-img-container">
+            <img src="/tienda/img/bolso_blanco.jpeg" alt="Cartera Cuero" class="producto-img principal">
+            <img src="/tienda/img/bolso_blanco2.jpeg" alt="Cartera Cuero Hover" class="producto-img hover">
+            <label for="modal-10" class="btn-vista-rapida" style="background-color: #000;">Ver Más</label>
+        </div>
+        <div class="producto-detalles">
+            <h3 style="margin-left: -10px;">BOLSO</h3>
+                <div class="rating">
+                    <span class="estrella" data-value="5">&#9733;</span>
+                    <span class="estrella" data-value="4">&#9733;</span>
+                    <span class="estrella" data-value="3">&#9733;</span>
+                    <span class="estrella" data-value="2">&#9733;</span>
+                    <span class="estrella" data-value="1">&#9733;</span>
+                </div>
+            <p class="precio" style="text-align: center;">$50,000</p>
+            <div class="color-circle" style="background-color: rgb(216, 215, 213);"></div>
+            <button class="btn-añadir" data-id="9" style="background-color: #000; margin-left: 10px;">Añadir al carrito</button>
+        </div>
+    </div>
+    <!-- Modal 10 -->
+    <input type="checkbox" id="modal-10" class="modal-checkbox">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="modal-10" class="close-btn">&times;</label>
+            <div class="modal-img-container">
+                <img style="width: 300px; height: 340px;" src="/tienda/img/bolso_blanco.jpeg" alt="Cartera Cuero">
+            </div>
+            <div class="modal-details">
+                <h3 style="margin-bottom: 15px;">CARTERA CUERO</h3>
+                <p style="margin-bottom: 20px;">Bolso clásico de cuero para un toque de elegancia atemporal.</p>
+                <p class="precio">$50,000</p>
+                <div class="color-circle" style="background-color: rgb(214, 214, 214); margin-left: 95px;"></div>
+                <button class="btn-añadir" data-id="9" style="background-color: #000; margin-left: 200px;">Añadir al carrito</button>
             </div>
         </div>
-        <div class="product" style="background: linear-gradient(to bottom, #000000, #ffffff);">
-            <img src="/tienda/img/bolso_blanco.jpeg" alt="">
-            <div class="product-txt">
-                <h3>Bolso Blanco</h3>
-                <p>Crochet</p>
-                <p class="precio">$70.000</p>
-                <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
-            </div>
-        </div>
-        <div class="product">
-            <img src="/tienda/img/cartera_rosa.jpeg" alt="">
-            <div class="product-txt">
-                <h3>Cartera Rosita</h3>
-                <p>Crochet</p>
-                <p class="precio">$60.000</p>
-                <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al carrito</a>
-            </div>
-        </div>
-       </div> 
+    </div>
     </main>
+
 
 
     <!--FOOTER-->

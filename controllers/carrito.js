@@ -14,7 +14,7 @@ function cargarEventListeners() {
 
 function agregarProducto(e) {
     e.preventDefault();
-    if (e.target.classList.contains('agregar-carrito')) {
+    if (e.target.classList.contains('btn-añadir')) {
         const productoSeleccionado = e.target.parentElement.parentElement;
         leerDatosProducto(productoSeleccionado);
     }
@@ -25,7 +25,7 @@ function leerDatosProducto(producto) {
         imagen: producto.querySelector('img').src,
         titulo: producto.querySelector('h3').textContent,
         precio: producto.querySelector('.precio').textContent,
-        id: producto.querySelector('a').getAttribute('data-id'),
+        id: producto.querySelector('button').getAttribute('data-id'),
         cantidad: 1,
     };
 

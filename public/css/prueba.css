@@ -113,6 +113,7 @@ img {
 .navbar ul li {
     display: inline-block;
     position: relative;
+    /* Necesario para que el menú desplegable funcione */
     margin: 0 20px;
 }
 
@@ -125,7 +126,7 @@ img {
     transition: color 0.3s ease;
 }
 
-
+/* Subrayado en el link al hacer hover o al estar activo */
 .navbar ul li a::after {
     content: '';
     position: absolute;
@@ -134,26 +135,31 @@ img {
     width: 0;
     height: 2px;
     background-color: #000000;
+    /* Color de la línea */
     transition: width 0.3s ease;
 }
 
-
+/* Mostrar la línea debajo del enlace */
 .navbar ul li a:hover::after,
 .navbar ul li a:focus::after {
     width: 100%;
-    
+    /* La línea se expande a todo el ancho del link */
 }
 
+/* Estilo de los enlaces cuando se pasa el mouse sobre ellos */
 .navbar ul li a:hover,
 .navbar ul li a:focus {
     color: #020202;
-   
+    /* Color del texto cuando se hace hover */
 }
 
+/* Menú desplegable */
 .submenu .submenu-items {
     display: none;
+    /* Oculta el submenú por defecto */
     position: absolute;
     top: 100%;
+    /* Lo posiciona justo debajo del enlace */
     left: 0;
     background-color: #444;
     width: 180px;
@@ -175,7 +181,7 @@ img {
     background-color: #555;
 }
 
-
+/* Mostrar el submenú cuando se pasa el mouse sobre el titular */
 .submenu:hover .submenu-items {
     display: block;
 }
@@ -344,25 +350,10 @@ th, td {
     color: #ffffff;
     border-radius: 5px;
     font-size: 15px;
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-
-
-
-.product:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-.product:hover img{
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-   
 .products {
     padding: 50px 0;
     text-align: center;
-    cursor: pointer;
 }
 .products h2 {
     color: #111111;
@@ -371,94 +362,201 @@ th, td {
     text-transform: uppercase;
     margin-bottom: 50px;
 }
-.product-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap : 50px;
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
 }
-.product {
-    text-align: center;
-    padding: 30px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+.producto-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.product img {
-    width: 250px;
-    height: 370px;
-    margin-bottom: 20px;
+
+.producto-img-container {
+    position: relative;
 }
-.product h3 {
-    font-size: 20px;
-    color: #111111;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 15px;
+
+.producto-img {
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
 }
-.product p, .precio {
-    font-size: 16px;
-    color: #111111;
-    margin-bottom: 15px;
+
+.producto-img.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
 }
+
+.producto-img-container:hover .producto-img.hover {
+    opacity: 1;
+}
+
+.btn-vista-rapida {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s;
+    font-size: 12px;
+}
+
+.btn-vista-rapida:hover {
+    background-color: #353638;
+}
+
+.producto-img-container:hover .btn-vista-rapida {
+    display: block;
+}
+
+.producto-detalles {
+    padding: 15px;
+}
+
+.producto-detalles h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.estrella {
+    font-size: 1.5em;
+    color: #ddd;
+    transition: color 0.3s;
+}
+
+.estrella:hover,
+.estrella:hover~.estrella {
+    color: #000;
+}
+
+.estrella.seleccionada,
+.estrella.seleccionada~.estrella {
+    color: #000;
+}
+
 .precio {
-    font-weight: 800;
+    font-size: 1.1em;
+    color: #ce3d3d;
+    font-weight: bold;
+    margin: 10px 0;
 }
-.icons {
-    padding: 50px 0 100px 0;
+
+.color {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 10px 0;
 }
-.icon-1 {
-    flex-basis: calc(33.3% - 30px);
-    display: flex;
+
+.color-circle {
+    width: 20px;
+    height: 20px;
+    margin-left: 130px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.color-circle:hover {
+    border-color: #333;
+    transform: scale(1.1);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-añadir {
+    background-color: #000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.btn-añadir:hover {
+    background-color: #353638;
+}
+
+/* Modal */
+.modal-checkbox {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 25px;
-    background-color: #f5f5f5;
+    z-index: 1000;
 }
-.icon-txt h3 {
-    font-size: 20px;
-    color: #111111;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-}
-.icon-txt p {
-    font-size: 16px;
-    color: #111111;
-}
-.blog {
+
+.modal-checkbox:checked + .modal {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 100px;
 }
-.blog-1 {
-    flex-basis: calc(33.3% - 30px);
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
 }
-.blog-1 img {
-    margin-bottom: 20px;
-}
-.btn-1 h3 {
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
     font-size: 20px;
-    color: #111111;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-}
-.blog-1 p {
-    font-size: 16px;
-    color: #111111;
+    cursor: pointer;
 }
 
+.modal-img-container img {
+    width: 100%;
+}
 
+.modal-details h3 {
+    margin-top: 15px;
+    font-size: 20px;
+}
 .footer {
     margin-bottom: 40px;
     padding: 50px 0;
     background-color: #111111;
-    
-    
 }
 .footer-content {
+    
     display: flex;
     justify-content: space-between;
-
 }
 .link  h3 {
     font-size: 18px;
@@ -466,4 +564,106 @@ th, td {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     margin-bottom: 20px;
+}
+.link a {
+    font-size: 16px;
+    color: #DCDCDC;
+    display: block;
+    margin-bottom: 10px;
+}
+@media (max-width:991px) {
+    .menu {
+        padding: 20px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #181818;
+        display: none;
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    .menu .navbar ul li a {
+        color: #ffffff;
+    }
+    #menu:checked .navbar {
+        display: initial;
+    }
+    .logo {
+        display: none;
+    }
+    .submenu:hover #carrrito {
+        min-width: 100%;
+    }
+    .header {
+        min-height: 0vh;
+    }
+    .header-content {
+        padding: 50px 0;
+        flex-direction: column;
+    }
+    .header-img {
+        display: none;
+    }
+    .header-txt {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .header-txt h1 {
+        font-size: 70px;
+    }
+    .ofert {
+        padding: 30px 30 0 30px;
+        flex-direction: column;
+    }
+    .ofert-1 {
+        margin-bottom: 30px;
+    }
+    .products {
+        padding: 0 30px 30px 30px;
+    }
+    .products h2 {
+        margin-bottom: 30px;
+    }
+    .product-content {
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+    }
+    .product img {
+        width: 20px;
+        height: 280px;
+    }
+    .icons {
+        padding: 30px;
+        flex-direction: column;
+    }
+    .icon-1 {
+        margin-bottom: 30px;
+    }
+    .blog {
+        padding: 0 30px 30px 30px;
+        flex-direction: column;
+    }
+    .blog-1 {
+        margin-bottom: 30px;
+    }
+    .footer {
+        padding: 30px;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+.final{
+    text-align: center;
+    
 }
